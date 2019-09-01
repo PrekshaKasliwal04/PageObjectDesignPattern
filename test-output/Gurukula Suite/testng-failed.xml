@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Gurukula Suite]">
+  <listeners>
+    <listener class-name="com.basesource.utils.RetryListener"/>
+  </listeners>
+  <test thread-count="2" name="Gurukula application test cases(failed)">
+    <groups>
+      <run>
+        <include name="REGRESSION"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.testscripts.gurukulApp.LoginTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="aftermethod"/>
+          <include name="verifyUserLoginWithValidCreds"/>
+          <include name="afterSuite"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.testscripts.gurukulApp.LoginTest -->
+      <class name="com.testscripts.gurukulApp.DashboardTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="aftermethod"/>
+          <include name="verifyBranchEntityType"/>
+          <include name="afterSuite"/>
+          <include name="verifyOperationsOfBranchEntityType"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.testscripts.gurukulApp.DashboardTest -->
+    </classes>
+  </test> <!-- Gurukula application test cases(failed) -->
+</suite> <!-- Failed suite [Gurukula Suite] -->

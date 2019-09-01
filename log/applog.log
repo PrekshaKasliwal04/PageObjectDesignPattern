@@ -1,0 +1,93 @@
+2019-08-31 17:30:53,802  INFO [main] PreDefinedActions:60 - File count is greater than 10, deleting the folder
+2019-08-31 17:30:53,824  INFO [main] DriverFactory:53 - Launching Firefox browser..
+2019-08-31 17:31:08,120  INFO [main] PreDefinedActions:82 - Test Started : verifyUserLoginWithValidCreds
+2019-08-31 17:31:10,832  INFO [main] PreDefinedActions:90 - Test Finished  : verifyUserLoginWithValidCreds
+2019-08-31 17:31:17,875  INFO [main] PreDefinedActions:94 - Browser is closed
+2019-08-31 17:31:17,878  INFO [main] DriverFactory:53 - Launching Firefox browser..
+2019-08-31 17:31:30,645  INFO [main] PreDefinedActions:82 - Test Started : verifyUserLoginWithValidCreds
+2019-08-31 17:31:33,345  INFO [main] LoginTest:22 - Login Success
+2019-08-31 17:31:33,931  INFO [main] LoginTest:24 - Logout Success
+2019-08-31 17:31:33,937  INFO [main] PreDefinedActions:90 - Test Finished  : verifyUserLoginWithValidCreds
+2019-08-31 17:31:40,501  INFO [main] PreDefinedActions:94 - Browser is closed
+2019-08-31 17:31:40,503  INFO [main] DriverFactory:53 - Launching Firefox browser..
+2019-08-31 17:31:52,585  INFO [main] PreDefinedActions:82 - Test Started : verifyAccountMenuSettingsValidations
+2019-08-31 17:31:54,228  INFO [main] AccountTest:21 - Dashboard title is matched
+2019-08-31 17:31:54,241 ERROR [main] PreDefinedActions:364 - Exception in getting locator type from properties file.String index out of range: -1
+2019-08-31 17:31:54,241 ERROR [main] PreDefinedActions:333 - Error in locator format. Please check properties file for object type
+2019-08-31 17:31:54,244 ERROR [main] PreDefinedActions:87 - Exception in getting locator as type is wrong.null
+2019-08-31 17:31:58,126  INFO [main] PreDefinedActions:90 - Test Finished  : verifyAccountMenuSettingsValidations
+2019-08-31 17:32:02,679  INFO [main] PreDefinedActions:94 - Browser is closed
+2019-08-31 17:32:02,681  INFO [main] DriverFactory:53 - Launching Firefox browser..
+2019-08-31 17:32:15,026  INFO [main] PreDefinedActions:82 - Test Started : verifyRegisterAccountEnrollFailure
+2019-08-31 17:32:15,200  INFO [main] RegisterAccountTest:22 - Dashboard title is matched
+2019-08-31 17:32:16,134  INFO [main] RegisterAccountTest:25 - Registration title is matched
+2019-08-31 17:32:16,801 ERROR [main] PreDefinedActions:364 - Exception in getting locator type from properties file.String index out of range: -1
+2019-08-31 17:32:16,801 ERROR [main] PreDefinedActions:333 - Error in locator format. Please check properties file for object type
+2019-08-31 17:32:16,801 ERROR [main] PreDefinedActions:87 - Exception in getting locator as type is wrong.null
+2019-08-31 17:32:17,801  INFO [main] PreDefinedActions:90 - Test Finished  : verifyRegisterAccountEnrollFailure
+2019-08-31 17:32:22,681  INFO [main] PreDefinedActions:94 - Browser is closed
+2019-08-31 17:32:22,686  INFO [main] DriverFactory:53 - Launching Firefox browser..
+2019-08-31 17:32:33,907  INFO [main] PreDefinedActions:82 - Test Started : verifyPagination
+2019-08-31 17:32:39,572  INFO [main] PaginationTest:25 - Dashboard title is matched
+2019-08-31 17:36:49,456  INFO [main] PaginationTest:46 - Clicked on next button
+2019-08-31 17:36:52,481 ERROR [main] PreDefinedActions:364 - Exception in getting locator type from properties file.String index out of range: -1
+2019-08-31 17:36:52,481 ERROR [main] PreDefinedActions:333 - Error in locator format. Please check properties file for object type
+2019-08-31 17:36:52,482 ERROR [main] PreDefinedActions:87 - Exception in getting locator as type is wrong.null
+2019-08-31 17:36:52,484  INFO [main] PaginationTest:49 - Next button validated
+2019-08-31 17:36:52,874  INFO [main] PaginationTest:52 - Previous button validated
+2019-08-31 17:36:53,218 ERROR [main] PreDefinedActions:364 - Exception in getting locator type from properties file.String index out of range: -1
+2019-08-31 17:36:53,218 ERROR [main] PreDefinedActions:333 - Error in locator format. Please check properties file for object type
+2019-08-31 17:36:53,218 ERROR [main] PreDefinedActions:87 - Exception in getting locator as type is wrong.null
+2019-08-31 17:36:53,574  INFO [main] PaginationTest:58 - First button validated
+2019-08-31 17:36:56,995 ERROR [main] PreDefinedActions:364 - Exception in getting locator type from properties file.String index out of range: -1
+2019-08-31 17:36:56,995 ERROR [main] PreDefinedActions:333 - Error in locator format. Please check properties file for object type
+2019-08-31 17:36:56,999 ERROR [main] PreDefinedActions:87 - Exception in getting locator as type is wrong.null
+2019-08-31 17:36:56,999  INFO [main] PaginationTest:63 - Last button validated
+2019-08-31 17:37:00,015  INFO [main] PreDefinedActions:90 - Test Finished  : verifyPagination
+2019-08-31 17:37:01,914  INFO [main] PreDefinedActions:94 - Browser is closed
+2019-08-31 17:37:01,917  INFO [main] DriverFactory:53 - Launching Firefox browser..
+2019-08-31 17:37:13,975  INFO [main] PreDefinedActions:82 - Test Started : verifyUserLoginWithInValidCreds
+2019-08-31 17:37:16,568  INFO [main] LoginTest:32 - Invalid User login error Success
+2019-08-31 17:37:16,578  INFO [main] PreDefinedActions:90 - Test Finished  : verifyUserLoginWithInValidCreds
+2019-08-31 17:37:24,746  INFO [main] PreDefinedActions:94 - Browser is closed
+2019-08-31 17:37:24,748  INFO [main] DriverFactory:53 - Launching Firefox browser..
+2019-08-31 17:37:36,417  INFO [main] PreDefinedActions:82 - Test Started : verifyAccountMenuSettingsNotSavedError
+2019-08-31 17:37:37,871  INFO [main] AccountTest:45 - Dashboard title is matched
+2019-08-31 17:37:37,871 ERROR [main] PreDefinedActions:364 - Exception in getting locator type from properties file.String index out of range: -1
+2019-08-31 17:37:37,881 ERROR [main] PreDefinedActions:333 - Error in locator format. Please check properties file for object type
+2019-08-31 17:37:37,881 ERROR [main] PreDefinedActions:87 - Exception in getting locator as type is wrong.null
+2019-08-31 17:37:52,129  INFO [main] PreDefinedActions:90 - Test Finished  : verifyAccountMenuSettingsNotSavedError
+2019-08-31 17:37:57,532  INFO [main] PreDefinedActions:94 - Browser is closed
+2019-08-31 17:37:57,535  INFO [main] DriverFactory:53 - Launching Firefox browser..
+2019-08-31 17:38:09,588  INFO [main] PreDefinedActions:82 - Test Started : verifyBranchEntityType
+2019-08-31 17:38:12,165  INFO [main] DashboardTest:29 - Dashboard title is matched
+2019-08-31 17:38:17,476  INFO [main] DashboardTest:48 - Query functionality working
+2019-08-31 17:38:17,764  INFO [main] PreDefinedActions:90 - Test Finished  : verifyBranchEntityType
+2019-08-31 17:38:22,667  INFO [main] PreDefinedActions:94 - Browser is closed
+2019-08-31 17:38:22,669  INFO [main] DriverFactory:53 - Launching Firefox browser..
+2019-08-31 17:38:35,715  INFO [main] PreDefinedActions:82 - Test Started : verifyStaffEntityType
+2019-08-31 17:38:37,217 ERROR [main] PreDefinedActions:364 - Exception in getting locator type from properties file.String index out of range: -1
+2019-08-31 17:38:37,217 ERROR [main] PreDefinedActions:333 - Error in locator format. Please check properties file for object type
+2019-08-31 17:38:37,217 ERROR [main] PreDefinedActions:87 - Exception in getting locator as type is wrong.null
+2019-08-31 17:38:41,335  INFO [main] DashboardTest:64 - Dashboard title is matched
+2019-08-31 17:38:51,402  INFO [main] PreDefinedActions:90 - Test Finished  : verifyStaffEntityType
+2019-08-31 17:38:55,625  INFO [main] PreDefinedActions:94 - Browser is closed
+2019-08-31 17:38:55,629  INFO [main] DriverFactory:53 - Launching Firefox browser..
+2019-08-31 17:39:07,122  INFO [main] PreDefinedActions:82 - Test Started : verifyOperationsOfBranchEntityType
+2019-08-31 17:39:08,230  INFO [main] PreDefinedActions:90 - Test Finished  : verifyOperationsOfBranchEntityType
+2019-08-31 17:39:13,498  INFO [main] PreDefinedActions:94 - Browser is closed
+2019-08-31 17:39:13,498  INFO [main] DriverFactory:53 - Launching Firefox browser..
+2019-08-31 17:39:26,442  INFO [main] PreDefinedActions:82 - Test Started : verifyOperationsOfBranchEntityType
+2019-08-31 17:39:28,045  INFO [main] PreDefinedActions:90 - Test Finished  : verifyOperationsOfBranchEntityType
+2019-08-31 17:39:34,693  INFO [main] PreDefinedActions:94 - Browser is closed
+2019-08-31 17:39:34,694  INFO [main] DriverFactory:53 - Launching Firefox browser..
+2019-08-31 17:39:46,840  INFO [main] PreDefinedActions:82 - Test Started : verifyOperationsOfBranchEntityType
+2019-08-31 17:39:48,021  INFO [main] DashboardTest:95 - Dashboard title is matched
+2019-08-31 17:40:16,952  INFO [main] PreDefinedActions:90 - Test Finished  : verifyOperationsOfBranchEntityType
+2019-08-31 17:40:19,754  INFO [main] PreDefinedActions:94 - Browser is closed
+2019-08-31 17:40:19,757  INFO [main] DriverFactory:53 - Launching Firefox browser..
+2019-08-31 17:40:31,281  INFO [main] PreDefinedActions:82 - Test Started : verifyOperationsOfStaffEntityType
+2019-08-31 17:40:32,383  INFO [main] DashboardTest:122 - Dashboard title is matched
+2019-08-31 17:41:24,534  INFO [main] PreDefinedActions:90 - Test Finished  : verifyOperationsOfStaffEntityType
+2019-08-31 17:41:26,521  INFO [main] PreDefinedActions:94 - Browser is closed
+2019-08-31 17:41:26,664  INFO [main] PreDefinedActions:100 - Test case execution is completed
