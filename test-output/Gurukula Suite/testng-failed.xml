@@ -11,23 +11,33 @@
       </run>
     </groups>
     <classes>
-      <class name="com.testscripts.gurukulApp.LoginTest">
+      <class name="com.testscripts.gurukulApp.AccountTest">
         <methods>
           <include name="beforeSuite"/>
           <include name="aftermethod"/>
-          <include name="verifyUserLoginWithValidCreds"/>
+          <include name="verifyAccountMenuSettingsNotSavedError"/>
           <include name="afterSuite"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.testscripts.gurukulApp.LoginTest -->
+      </class> <!-- com.testscripts.gurukulApp.AccountTest -->
+      <class name="com.testscripts.gurukulApp.RegisterAccountTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="aftermethod"/>
+          <include name="afterSuite"/>
+          <include name="verifyRegisterAccountEnrollFailure"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.testscripts.gurukulApp.RegisterAccountTest -->
       <class name="com.testscripts.gurukulApp.DashboardTest">
         <methods>
           <include name="beforeSuite"/>
           <include name="aftermethod"/>
+          <include name="verifyOperationsOfStaffEntityType"/>
           <include name="verifyBranchEntityType"/>
           <include name="afterSuite"/>
-          <include name="verifyOperationsOfBranchEntityType"/>
           <include name="beforeMethod"/>
+          <include name="verifyStaffEntityType"/>
         </methods>
       </class> <!-- com.testscripts.gurukulApp.DashboardTest -->
     </classes>

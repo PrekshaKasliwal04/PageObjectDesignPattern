@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Gurukula application test cases</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>10/0/3</td>
+<td>Tests passed/Failed/Skipped:</td><td>9/1/4</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Aug 31 17:30:53 IST 2019</td>
+<td>Started on:</td><td>Mon Sep 02 14:00:33 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>632 seconds (632715 ms)</td>
+<tr><td>Total time:</td><td>651 seconds (651176 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>REGRESSION </td>
 </tr><tr>
@@ -67,6 +67,80 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.testscripts.gurukulApp.RegisterAccountTest.verifyRegisterAccountEnrollFailure()'><b>verifyRegisterAccountEnrollFailure</b><br>Test class: com.testscripts.gurukulApp.RegisterAccountTest<br>Test method: Test to Register new user</td>
+<td><div><pre>java.lang.AssertionError: Registration failed message is not displayed expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertFalse(Assert.java:65)
+	at com.testscripts.gurukulApp.RegisterAccountTest.verifyRegisterAccountEnrollFailure(RegisterAccountTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace768216420", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace768216420'><pre>java.lang.AssertionError: Registration failed message is not displayed expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertFalse(Assert.java:65)
+	at com.testscripts.gurukulApp.RegisterAccountTest.verifyRegisterAccountEnrollFailure(RegisterAccountTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>com.testscripts.gurukulApp.RegisterAccountTest@2357d90a</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -77,7 +151,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.testscripts.gurukulApp.AccountTest.verifyAccountMenuSettingsNotSavedError()'><b>verifyAccountMenuSettingsNotSavedError</b><br>Test class: com.testscripts.gurukulApp.AccountTest</td>
 <td></td>
-<td>15</td>
+<td>14</td>
 <td>com.testscripts.gurukulApp.AccountTest@7f9fcf7f</td></tr>
 <tr>
 <td title='com.testscripts.gurukulApp.AccountTest.verifyAccountMenuSettingsValidations()'><b>verifyAccountMenuSettingsValidations</b><br>Test class: com.testscripts.gurukulApp.AccountTest</td>
@@ -90,37 +164,32 @@ function toggleAllBoxes() {
 <td>8</td>
 <td>com.testscripts.gurukulApp.DashboardTest@6328d34a</td></tr>
 <tr>
-<td title='com.testscripts.gurukulApp.DashboardTest.verifyOperationsOfBranchEntityType()'><b>verifyOperationsOfBranchEntityType</b><br>Test class: com.testscripts.gurukulApp.DashboardTest</td>
+<td title='com.testscripts.gurukulApp.DashboardTest.verifyOperationsOfBranchEntityType()'><b>verifyOperationsOfBranchEntityType</b><br>Test class: com.testscripts.gurukulApp.DashboardTest<br>Test method: Test to Verify operations query,view,delete,edit for branch entity</td>
 <td></td>
 <td>30</td>
 <td>com.testscripts.gurukulApp.DashboardTest@6328d34a</td></tr>
 <tr>
-<td title='com.testscripts.gurukulApp.DashboardTest.verifyOperationsOfStaffEntityType()'><b>verifyOperationsOfStaffEntityType</b><br>Test class: com.testscripts.gurukulApp.DashboardTest</td>
+<td title='com.testscripts.gurukulApp.DashboardTest.verifyOperationsOfStaffEntityType()'><b>verifyOperationsOfStaffEntityType</b><br>Test class: com.testscripts.gurukulApp.DashboardTest<br>Test method: Test to Verify operations query,view,delete,edit for staff entity</td>
 <td></td>
-<td>53</td>
+<td>50</td>
 <td>com.testscripts.gurukulApp.DashboardTest@6328d34a</td></tr>
 <tr>
-<td title='com.testscripts.gurukulApp.PaginationTest.verifyPagination()'><b>verifyPagination</b><br>Test class: com.testscripts.gurukulApp.PaginationTest</td>
+<td title='com.testscripts.gurukulApp.PaginationTest.verifyPagination()'><b>verifyPagination</b><br>Test class: com.testscripts.gurukulApp.PaginationTest<br>Test method: Test to Verify Pagination - First,Last,Next,Previous functions</td>
 <td></td>
 <td>266</td>
 <td>com.testscripts.gurukulApp.PaginationTest@145eaa29</td></tr>
 <tr>
-<td title='com.testscripts.gurukulApp.RegisterAccountTest.verifyRegisterAccountEnrollFailure()'><b>verifyRegisterAccountEnrollFailure</b><br>Test class: com.testscripts.gurukulApp.RegisterAccountTest</td>
+<td title='com.testscripts.gurukulApp.DashboardTest.verifyStaffEntityType()'><b>verifyStaffEntityType</b><br>Test class: com.testscripts.gurukulApp.DashboardTest<br>Test method: Test to verify staff addition</td>
 <td></td>
-<td>2</td>
-<td>com.testscripts.gurukulApp.RegisterAccountTest@2357d90a</td></tr>
-<tr>
-<td title='com.testscripts.gurukulApp.DashboardTest.verifyStaffEntityType()'><b>verifyStaffEntityType</b><br>Test class: com.testscripts.gurukulApp.DashboardTest</td>
-<td></td>
-<td>15</td>
+<td>16</td>
 <td>com.testscripts.gurukulApp.DashboardTest@6328d34a</td></tr>
 <tr>
-<td title='com.testscripts.gurukulApp.LoginTest.verifyUserLoginWithInValidCreds()'><b>verifyUserLoginWithInValidCreds</b><br>Test class: com.testscripts.gurukulApp.LoginTest<br>Test method: Verify User login with valid credentials</td>
+<td title='com.testscripts.gurukulApp.LoginTest.verifyUserLoginWithInValidCreds()'><b>verifyUserLoginWithInValidCreds</b><br>Test class: com.testscripts.gurukulApp.LoginTest<br>Test method: Verify User login with Invalid credentials</td>
 <td></td>
 <td>2</td>
 <td>com.testscripts.gurukulApp.LoginTest@77e9807f</td></tr>
 <tr>
-<td title='com.testscripts.gurukulApp.LoginTest.verifyUserLoginWithValidCreds()'><b>verifyUserLoginWithValidCreds</b><br>Test class: com.testscripts.gurukulApp.LoginTest<br>Test method: Verify User login with valid credentials</td>
+<td title='com.testscripts.gurukulApp.LoginTest.verifyUserLoginWithValidCreds()'><b>verifyUserLoginWithValidCreds</b><br>Test class: com.testscripts.gurukulApp.LoginTest<br>Test method: Verify User login with valid credentials and logout</td>
 <td></td>
 <td>3</td>
 <td>com.testscripts.gurukulApp.LoginTest@77e9807f</td></tr>
@@ -133,12 +202,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.testscripts.gurukulApp.DashboardTest.verifyOperationsOfBranchEntityType()'><b>verifyOperationsOfBranchEntityType</b><br>Test class: com.testscripts.gurukulApp.DashboardTest</td>
+<td title='com.testscripts.gurukulApp.AccountTest.verifyAccountMenuSettingsNotSavedError()'><b>verifyAccountMenuSettingsNotSavedError</b><br>Test class: com.testscripts.gurukulApp.AccountTest</td>
 <td><div><pre>java.lang.AssertionError: Dashboard title text is incorrect expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertTrue(Assert.java:44)
-	at com.testscripts.gurukulApp.DashboardTest.verifyOperationsOfBranchEntityType(DashboardTest.java:94)
+	at com.testscripts.gurukulApp.AccountTest.verifyAccountMenuSettingsNotSavedError(AccountTest.java:44)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -164,12 +233,78 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace746394140", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace746394140'><pre>java.lang.AssertionError: Dashboard title text is incorrect expected [true] but found [false]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1648582256", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1648582256'><pre>java.lang.AssertionError: Dashboard title text is incorrect expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertTrue(Assert.java:44)
-	at com.testscripts.gurukulApp.DashboardTest.verifyOperationsOfBranchEntityType(DashboardTest.java:94)
+	at com.testscripts.gurukulApp.AccountTest.verifyAccountMenuSettingsNotSavedError(AccountTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>com.testscripts.gurukulApp.AccountTest@7f9fcf7f</td></tr>
+<tr>
+<td title='com.testscripts.gurukulApp.DashboardTest.verifyOperationsOfStaffEntityType()'><b>verifyOperationsOfStaffEntityType</b><br>Test class: com.testscripts.gurukulApp.DashboardTest<br>Test method: Test to Verify operations query,view,delete,edit for staff entity</td>
+<td><div><pre>java.lang.AssertionError: Dashboard title text is incorrect expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.testscripts.gurukulApp.DashboardTest.verifyOperationsOfStaffEntityType(DashboardTest.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1324173038", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1324173038'><pre>java.lang.AssertionError: Dashboard title text is incorrect expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.testscripts.gurukulApp.DashboardTest.verifyOperationsOfStaffEntityType(DashboardTest.java:121)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -199,20 +334,20 @@ function toggleAllBoxes() {
 <td>1</td>
 <td>com.testscripts.gurukulApp.DashboardTest@6328d34a</td></tr>
 <tr>
-<td title='com.testscripts.gurukulApp.DashboardTest.verifyOperationsOfBranchEntityType()'><b>verifyOperationsOfBranchEntityType</b><br>Test class: com.testscripts.gurukulApp.DashboardTest</td>
-<td><div><pre>java.lang.AssertionError: Dashboard title text is incorrect expected [true] but found [false]
+<td title='com.testscripts.gurukulApp.RegisterAccountTest.verifyRegisterAccountEnrollFailure()'><b>verifyRegisterAccountEnrollFailure</b><br>Test class: com.testscripts.gurukulApp.RegisterAccountTest<br>Test method: Test to Register new user</td>
+<td><div><pre>java.lang.AssertionError: Registration title text is incorrect expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertTrue(Assert.java:44)
-	at com.testscripts.gurukulApp.DashboardTest.verifyOperationsOfBranchEntityType(DashboardTest.java:94)
+	at com.testscripts.gurukulApp.RegisterAccountTest.verifyRegisterAccountEnrollFailure(RegisterAccountTest.java:24)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -230,20 +365,20 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1433956626", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1433956626'><pre>java.lang.AssertionError: Dashboard title text is incorrect expected [true] but found [false]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1175631958", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1175631958'><pre>java.lang.AssertionError: Registration title text is incorrect expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertTrue(Assert.java:44)
-	at com.testscripts.gurukulApp.DashboardTest.verifyOperationsOfBranchEntityType(DashboardTest.java:94)
+	at com.testscripts.gurukulApp.RegisterAccountTest.verifyRegisterAccountEnrollFailure(RegisterAccountTest.java:24)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -262,23 +397,23 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>1</td>
-<td>com.testscripts.gurukulApp.DashboardTest@6328d34a</td></tr>
+<td>0</td>
+<td>com.testscripts.gurukulApp.RegisterAccountTest@2357d90a</td></tr>
 <tr>
-<td title='com.testscripts.gurukulApp.LoginTest.verifyUserLoginWithValidCreds()'><b>verifyUserLoginWithValidCreds</b><br>Test class: com.testscripts.gurukulApp.LoginTest<br>Test method: Verify User login with valid credentials</td>
-<td><div><pre>java.lang.AssertionError: Dashboard title text is incorrect expected [true] but found [false]
+<td title='com.testscripts.gurukulApp.RegisterAccountTest.verifyRegisterAccountEnrollFailure()'><b>verifyRegisterAccountEnrollFailure</b><br>Test class: com.testscripts.gurukulApp.RegisterAccountTest<br>Test method: Test to Register new user</td>
+<td><div><pre>java.lang.AssertionError: Registration failed message is not displayed expected [false] but found [true]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at com.testscripts.gurukulApp.LoginTest.verifyUserLoginWithValidCreds(LoginTest.java:21)
+	at org.testng.Assert.assertFalse(Assert.java:65)
+	at com.testscripts.gurukulApp.RegisterAccountTest.verifyRegisterAccountEnrollFailure(RegisterAccountTest.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -296,20 +431,20 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2035381640", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2035381640'><pre>java.lang.AssertionError: Dashboard title text is incorrect expected [true] but found [false]
+</pre></div><a href='#' onClick='toggleBox("stack-trace905080434", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace905080434'><pre>java.lang.AssertionError: Registration failed message is not displayed expected [false] but found [true]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at com.testscripts.gurukulApp.LoginTest.verifyUserLoginWithValidCreds(LoginTest.java:21)
+	at org.testng.Assert.assertFalse(Assert.java:65)
+	at com.testscripts.gurukulApp.RegisterAccountTest.verifyRegisterAccountEnrollFailure(RegisterAccountTest.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -329,7 +464,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>2</td>
-<td>com.testscripts.gurukulApp.LoginTest@77e9807f</td></tr>
+<td>com.testscripts.gurukulApp.RegisterAccountTest@2357d90a</td></tr>
 </table><p>
 </body>
 </html>

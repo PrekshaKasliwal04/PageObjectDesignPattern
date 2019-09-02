@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Gurukula_Suite">
-              <span class="suite-name border-skipped">Gurukula Suite</span>
+              <span class="suite-name border-failed">Gurukula Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Gurukula_Suite">
-                    <span>C:\Users\HP\Service_now\Gurukula_Feature_Test\suites\testng.xml</span>
+                    <span>D:\Git_PROject\TestAutomationGurukul\suites\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">13 methods,  3 skipped,  10 passed</span>
+                    <span class="method-stats">14 methods, 1 failed,  4 skipped,  9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Gurukula_Suite" class="hide-methods failed suite-Gurukula_Suite"> (hide)</a> <!-- hide-methods failed suite-Gurukula_Suite -->
+                      <a href="#" panel-name="suite-Gurukula_Suite" class="show-methods failed suite-Gurukula_Suite"> (show)</a> <!-- show-methods failed suite-Gurukula_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Gurukula_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Gurukula_Suite" title="com.testscripts.gurukulApp.RegisterAccountTest" hash-for-method="verifyRegisterAccountEnrollFailure">verifyRegisterAccountEnrollFailure</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Gurukula_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -102,17 +116,22 @@
                     <div class="method-list-content skipped suite-Gurukula_Suite">
                       <span>
                         <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Gurukula_Suite" title="com.testscripts.gurukulApp.DashboardTest" hash-for-method="verifyOperationsOfBranchEntityType">verifyOperationsOfBranchEntityType</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Gurukula_Suite" title="com.testscripts.gurukulApp.AccountTest" hash-for-method="verifyAccountMenuSettingsNotSavedError">verifyAccountMenuSettingsNotSavedError</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Gurukula_Suite" title="com.testscripts.gurukulApp.DashboardTest" hash-for-method="verifyOperationsOfBranchEntityType">verifyOperationsOfBranchEntityType</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Gurukula_Suite" title="com.testscripts.gurukulApp.DashboardTest" hash-for-method="verifyOperationsOfStaffEntityType">verifyOperationsOfStaffEntityType</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Gurukula_Suite" title="com.testscripts.gurukulApp.LoginTest" hash-for-method="verifyUserLoginWithValidCreds">verifyUserLoginWithValidCreds</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Gurukula_Suite" title="com.testscripts.gurukulApp.RegisterAccountTest" hash-for-method="verifyRegisterAccountEnrollFailure">verifyRegisterAccountEnrollFailure</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Gurukula_Suite" title="com.testscripts.gurukulApp.RegisterAccountTest" hash-for-method="verifyRegisterAccountEnrollFailure">verifyRegisterAccountEnrollFailure</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Gurukula_Suite -->
@@ -156,11 +175,6 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Gurukula_Suite" title="com.testscripts.gurukulApp.RegisterAccountTest" hash-for-method="verifyRegisterAccountEnrollFailure">verifyRegisterAccountEnrollFailure</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Gurukula_Suite" title="com.testscripts.gurukulApp.DashboardTest" hash-for-method="verifyStaffEntityType">verifyStaffEntityType</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -186,22 +200,112 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Gurukula_Suite" class="panel Gurukula_Suite">
-          <div class="suite-Gurukula_Suite-class-skipped">
+          <div class="suite-Gurukula_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.testscripts.gurukulApp.LoginTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.testscripts.gurukulApp.RegisterAccountTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyUserLoginWithValidCreds">
-                  </a> <!-- verifyUserLoginWithValidCreds -->
-                  <span class="method-name">verifyUserLoginWithValidCreds</span>
-                  <div class="stack-trace">java.lang.AssertionError: Dashboard title text is incorrect expected [true] but found [false]
+                  <a name="verifyRegisterAccountEnrollFailure">
+                  </a> <!-- verifyRegisterAccountEnrollFailure -->
+                  <span class="method-name">verifyRegisterAccountEnrollFailure</span>
+                  <div class="stack-trace">java.lang.AssertionError: Registration failed message is not displayed expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertFalse(Assert.java:65)
+	at com.testscripts.gurukulApp.RegisterAccountTest.verifyRegisterAccountEnrollFailure(RegisterAccountTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Test to Register new user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Gurukula_Suite-class-failed -->
+          <div class="suite-Gurukula_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.testscripts.gurukulApp.RegisterAccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisterAccountEnrollFailure">
+                  </a> <!-- verifyRegisterAccountEnrollFailure -->
+                  <span class="method-name">verifyRegisterAccountEnrollFailure</span>
+                  <div class="stack-trace">java.lang.AssertionError: Registration failed message is not displayed expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertFalse(Assert.java:65)
+	at com.testscripts.gurukulApp.RegisterAccountTest.verifyRegisterAccountEnrollFailure(RegisterAccountTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Test to Register new user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisterAccountEnrollFailure">
+                  </a> <!-- verifyRegisterAccountEnrollFailure -->
+                  <span class="method-name">verifyRegisterAccountEnrollFailure</span>
+                  <div class="stack-trace">java.lang.AssertionError: Registration title text is incorrect expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertTrue(Assert.java:44)
-	at com.testscripts.gurukulApp.LoginTest.verifyUserLoginWithValidCreds(LoginTest.java:21)
+	at com.testscripts.gurukulApp.RegisterAccountTest.verifyRegisterAccountEnrollFailure(RegisterAccountTest.java:24)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -230,7 +334,7 @@
 
 </div> <!-- stack-trace -->
                   <em>
-(Verify User login with valid credentials)                  </em>
+(Test to Register new user)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -238,19 +342,19 @@
           <div class="suite-Gurukula_Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">com.testscripts.gurukulApp.DashboardTest</span>
+              <span class="class-name">com.testscripts.gurukulApp.AccountTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyOperationsOfBranchEntityType">
-                  </a> <!-- verifyOperationsOfBranchEntityType -->
-                  <span class="method-name">verifyOperationsOfBranchEntityType</span>
+                  <a name="verifyAccountMenuSettingsNotSavedError">
+                  </a> <!-- verifyAccountMenuSettingsNotSavedError -->
+                  <span class="method-name">verifyAccountMenuSettingsNotSavedError</span>
                   <div class="stack-trace">java.lang.AssertionError: Dashboard title text is incorrect expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertTrue(Assert.java:44)
-	at com.testscripts.gurukulApp.DashboardTest.verifyOperationsOfBranchEntityType(DashboardTest.java:94)
+	at com.testscripts.gurukulApp.AccountTest.verifyAccountMenuSettingsNotSavedError(AccountTest.java:44)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -280,24 +384,32 @@
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Gurukula_Suite-class-skipped -->
+          <div class="suite-Gurukula_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.testscripts.gurukulApp.DashboardTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyOperationsOfBranchEntityType">
-                  </a> <!-- verifyOperationsOfBranchEntityType -->
-                  <span class="method-name">verifyOperationsOfBranchEntityType</span>
+                  <a name="verifyOperationsOfStaffEntityType">
+                  </a> <!-- verifyOperationsOfStaffEntityType -->
+                  <span class="method-name">verifyOperationsOfStaffEntityType</span>
                   <div class="stack-trace">java.lang.AssertionError: Dashboard title text is incorrect expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertTrue(Assert.java:44)
-	at com.testscripts.gurukulApp.DashboardTest.verifyOperationsOfBranchEntityType(DashboardTest.java:94)
+	at com.testscripts.gurukulApp.DashboardTest.verifyOperationsOfStaffEntityType(DashboardTest.java:121)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -317,6 +429,8 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 
 </div> <!-- stack-trace -->
+                  <em>
+(Test to Verify operations query,view,delete,edit for staff entity)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -346,21 +460,6 @@
           <div class="suite-Gurukula_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.testscripts.gurukulApp.RegisterAccountTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyRegisterAccountEnrollFailure">
-                  </a> <!-- verifyRegisterAccountEnrollFailure -->
-                  <span class="method-name">verifyRegisterAccountEnrollFailure</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Gurukula_Suite-class-passed -->
-          <div class="suite-Gurukula_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.testscripts.gurukulApp.PaginationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -369,6 +468,8 @@
                   <a name="verifyPagination">
                   </a> <!-- verifyPagination -->
                   <span class="method-name">verifyPagination</span>
+                  <em>
+(Test to Verify Pagination - First,Last,Next,Previous functions)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -385,7 +486,7 @@
                   </a> <!-- verifyUserLoginWithInValidCreds -->
                   <span class="method-name">verifyUserLoginWithInValidCreds</span>
                   <em>
-(Verify User login with valid credentials)                  </em>
+(Verify User login with Invalid credentials)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -394,7 +495,7 @@
                   </a> <!-- verifyUserLoginWithValidCreds -->
                   <span class="method-name">verifyUserLoginWithValidCreds</span>
                   <em>
-(Verify User login with valid credentials)                  </em>
+(Verify User login with valid credentials and logout)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -419,6 +520,8 @@
                   <a name="verifyOperationsOfBranchEntityType">
                   </a> <!-- verifyOperationsOfBranchEntityType -->
                   <span class="method-name">verifyOperationsOfBranchEntityType</span>
+                  <em>
+(Test to Verify operations query,view,delete,edit for branch entity)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -426,6 +529,8 @@
                   <a name="verifyOperationsOfStaffEntityType">
                   </a> <!-- verifyOperationsOfStaffEntityType -->
                   <span class="method-name">verifyOperationsOfStaffEntityType</span>
+                  <em>
+(Test to Verify operations query,view,delete,edit for staff entity)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -433,6 +538,8 @@
                   <a name="verifyStaffEntityType">
                   </a> <!-- verifyStaffEntityType -->
                   <span class="method-name">verifyStaffEntityType</span>
+                  <em>
+(Test to verify staff addition)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -440,7 +547,7 @@
         </div> <!-- panel Gurukula_Suite -->
         <div panel-name="test-xml-Gurukula_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\HP\Service_now\Gurukula_Feature_Test\suites\testng.xml</span>
+            <span class="header-content">D:\Git_PROject\TestAutomationGurukul\suites\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -545,59 +652,63 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(13);
+data.addRows(14);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyPagination')
 data.setCell(0, 2, 'com.testscripts.gurukulApp.PaginationTest')
-data.setCell(0, 3, 266108);
+data.setCell(0, 3, 266272);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyOperationsOfStaffEntityType')
 data.setCell(1, 2, 'com.testscripts.gurukulApp.DashboardTest')
-data.setCell(1, 3, 53253);
+data.setCell(1, 3, 50423);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyOperationsOfBranchEntityType')
 data.setCell(2, 2, 'com.testscripts.gurukulApp.DashboardTest')
-data.setCell(2, 3, 30111);
+data.setCell(2, 3, 30689);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyAccountMenuSettingsNotSavedError')
-data.setCell(3, 2, 'com.testscripts.gurukulApp.AccountTest')
-data.setCell(3, 3, 15712);
+data.setCell(3, 1, 'verifyStaffEntityType')
+data.setCell(3, 2, 'com.testscripts.gurukulApp.DashboardTest')
+data.setCell(3, 3, 16037);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyStaffEntityType')
-data.setCell(4, 2, 'com.testscripts.gurukulApp.DashboardTest')
-data.setCell(4, 3, 15685);
+data.setCell(4, 1, 'verifyAccountMenuSettingsNotSavedError')
+data.setCell(4, 2, 'com.testscripts.gurukulApp.AccountTest')
+data.setCell(4, 3, 14242);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'verifyBranchEntityType')
 data.setCell(5, 2, 'com.testscripts.gurukulApp.DashboardTest')
-data.setCell(5, 3, 8176);
+data.setCell(5, 3, 8212);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'verifyAccountMenuSettingsValidations')
 data.setCell(6, 2, 'com.testscripts.gurukulApp.AccountTest')
-data.setCell(6, 3, 5521);
+data.setCell(6, 3, 5714);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'verifyUserLoginWithValidCreds')
 data.setCell(7, 2, 'com.testscripts.gurukulApp.LoginTest')
-data.setCell(7, 3, 3286);
+data.setCell(7, 3, 3488);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'verifyRegisterAccountEnrollFailure')
 data.setCell(8, 2, 'com.testscripts.gurukulApp.RegisterAccountTest')
-data.setCell(8, 3, 2775);
+data.setCell(8, 3, 2839);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyUserLoginWithValidCreds')
+data.setCell(9, 1, 'verifyUserLoginWithInValidCreds')
 data.setCell(9, 2, 'com.testscripts.gurukulApp.LoginTest')
-data.setCell(9, 3, 2711);
+data.setCell(9, 3, 2556);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verifyUserLoginWithInValidCreds')
-data.setCell(10, 2, 'com.testscripts.gurukulApp.LoginTest')
-data.setCell(10, 3, 2593);
+data.setCell(10, 1, 'verifyRegisterAccountEnrollFailure')
+data.setCell(10, 2, 'com.testscripts.gurukulApp.RegisterAccountTest')
+data.setCell(10, 3, 2094);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'verifyOperationsOfBranchEntityType')
+data.setCell(11, 1, 'verifyOperationsOfStaffEntityType')
 data.setCell(11, 2, 'com.testscripts.gurukulApp.DashboardTest')
-data.setCell(11, 3, 1603);
+data.setCell(11, 3, 1641);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'verifyOperationsOfBranchEntityType')
-data.setCell(12, 2, 'com.testscripts.gurukulApp.DashboardTest')
-data.setCell(12, 3, 1108);
+data.setCell(12, 1, 'verifyAccountMenuSettingsNotSavedError')
+data.setCell(12, 2, 'com.testscripts.gurukulApp.AccountTest')
+data.setCell(12, 3, 1406);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyRegisterAccountEnrollFailure')
+data.setCell(13, 2, 'com.testscripts.gurukulApp.RegisterAccountTest')
+data.setCell(13, 3, 343);
 window.suiteTableData['Gurukula_Suite']= { tableData: data, tableDiv: 'times-div-Gurukula_Suite'}
 return data;
 }
@@ -666,189 +777,203 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.testscripts.gurukulApp.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">beforeSuite(org.testng.TestRunner@60bdf15d)</span>
+                <span class="method-name">beforeSuite(org.testng.TestRunner@63cd604c)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public final void com.testscripts.gurukulApp.LoginTest.verifyUserLoginWithValidCreds() throws java.l...)</span>
-                <span class="method-start">194 ms</span>
+                <span class="method-start">155 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUserLoginWithValidCreds</span>
-                <span class="method-start">14491 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">aftermethod([TestResult name=verifyUserLoginWithValidCreds status=SKIP method=LoginTest.verifyUserLoginWithValid...)</span>
-                <span class="method-start">17202 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public final void com.testscripts.gurukulApp.LoginTest.verifyUserLoginWithValidCreds() throws java.l...)</span>
-                <span class="method-start">24246 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyUserLoginWithValidCreds</span>
-                <span class="method-start">37017 ms</span>
+                <span class="method-start">16718 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">aftermethod([TestResult name=verifyUserLoginWithValidCreds status=SUCCESS method=LoginTest.verifyUserLoginWithVa...)</span>
-                <span class="method-start">40306 ms</span>
+                <span class="method-start">20206 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.testscripts.gurukulApp.AccountTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public final void com.testscripts.gurukulApp.AccountTest.verifyAccountMenuSettingsValidations() thro...)</span>
-                <span class="method-start">46873 ms</span>
+                <span class="method-start">24612 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyAccountMenuSettingsValidations</span>
-                <span class="method-start">58973 ms</span>
+                <span class="method-start">37300 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">aftermethod([TestResult name=verifyAccountMenuSettingsValidations status=SUCCESS method=AccountTest.verifyAccoun...)</span>
-                <span class="method-start">64496 ms</span>
+                <span class="method-start">43014 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.testscripts.gurukulApp.RegisterAccountTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public final void com.testscripts.gurukulApp.RegisterAccountTest.verifyRegisterAccountEnrollFailure(...)</span>
-                <span class="method-start">69051 ms</span>
+                <span class="method-start">46883 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyRegisterAccountEnrollFailure</span>
-                <span class="method-start">81396 ms</span>
+                <span class="method-start">59511 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">aftermethod([TestResult name=verifyRegisterAccountEnrollFailure status=SUCCESS method=RegisterAccountTest.verify...)</span>
-                <span class="method-start">84171 ms</span>
+                <span class="method-name">aftermethod([TestResult name=verifyRegisterAccountEnrollFailure status=SKIP method=RegisterAccountTest.verifyReg...)</span>
+                <span class="method-start">59866 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public final void com.testscripts.gurukulApp.RegisterAccountTest.verifyRegisterAccountEnrollFailure(...)</span>
+                <span class="method-start">64709 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRegisterAccountEnrollFailure</span>
+                <span class="method-start">77574 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">aftermethod([TestResult name=verifyRegisterAccountEnrollFailure status=SKIP method=RegisterAccountTest.verifyReg...)</span>
+                <span class="method-start">80417 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public final void com.testscripts.gurukulApp.RegisterAccountTest.verifyRegisterAccountEnrollFailure(...)</span>
+                <span class="method-start">87032 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyRegisterAccountEnrollFailure</span>
+                <span class="method-start">99649 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">aftermethod([TestResult name=verifyRegisterAccountEnrollFailure status=FAILURE method=RegisterAccountTest.verify...)</span>
+                <span class="method-start">101747 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.testscripts.gurukulApp.PaginationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public final void com.testscripts.gurukulApp.PaginationTest.verifyPagination() throws java.lang.Exce...)</span>
-                <span class="method-start">89053 ms</span>
+                <span class="method-start">106601 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyPagination</span>
-                <span class="method-start">100277 ms</span>
+                <span class="method-start">120972 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">aftermethod([TestResult name=verifyPagination status=SUCCESS method=PaginationTest.verifyPagination()[pri:1, ins...)</span>
-                <span class="method-start">366385 ms</span>
+                <span class="method-start">387248 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.testscripts.gurukulApp.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public final void com.testscripts.gurukulApp.LoginTest.verifyUserLoginWithInValidCreds() throws java...)</span>
-                <span class="method-start">368286 ms</span>
+                <span class="method-start">389086 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUserLoginWithInValidCreds</span>
-                <span class="method-start">380345 ms</span>
+                <span class="method-start">402645 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">aftermethod([TestResult name=verifyUserLoginWithInValidCreds status=SUCCESS method=LoginTest.verifyUserLoginWith...)</span>
-                <span class="method-start">382947 ms</span>
+                <span class="method-start">405205 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.testscripts.gurukulApp.AccountTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public final void com.testscripts.gurukulApp.AccountTest.verifyAccountMenuSettingsNotSavedError() th...)</span>
-                <span class="method-start">391118 ms</span>
+                <span class="method-start">410443 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyAccountMenuSettingsNotSavedError</span>
-                <span class="method-start">402787 ms</span>
+                <span class="method-start">424157 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">aftermethod([TestResult name=verifyAccountMenuSettingsNotSavedError status=SKIP method=AccountTest.verifyAccount...)</span>
+                <span class="method-start">425566 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public final void com.testscripts.gurukulApp.AccountTest.verifyAccountMenuSettingsNotSavedError() th...)</span>
+                <span class="method-start">429802 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAccountMenuSettingsNotSavedError</span>
+                <span class="method-start">441935 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">aftermethod([TestResult name=verifyAccountMenuSettingsNotSavedError status=SUCCESS method=AccountTest.verifyAcco...)</span>
-                <span class="method-start">418499 ms</span>
+                <span class="method-start">456177 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.testscripts.gurukulApp.DashboardTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public final void com.testscripts.gurukulApp.DashboardTest.verifyBranchEntityType() throws java.lang...)</span>
-                <span class="method-start">423904 ms</span>
+                <span class="method-start">460990 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyBranchEntityType</span>
-                <span class="method-start">435958 ms</span>
+                <span class="method-start">473685 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">aftermethod([TestResult name=verifyBranchEntityType status=SUCCESS method=DashboardTest.verifyBranchEntityType()...)</span>
-                <span class="method-start">444134 ms</span>
+                <span class="method-start">481900 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public final void com.testscripts.gurukulApp.DashboardTest.verifyStaffEntityType() throws java.lang....)</span>
-                <span class="method-start">449039 ms</span>
+                <span class="method-start">486538 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyStaffEntityType</span>
-                <span class="method-start">462085 ms</span>
+                <span class="method-start">501338 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">aftermethod([TestResult name=verifyStaffEntityType status=SUCCESS method=DashboardTest.verifyStaffEntityType()[p...)</span>
-                <span class="method-start">477771 ms</span>
+                <span class="method-start">517391 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public final void com.testscripts.gurukulApp.DashboardTest.verifyOperationsOfBranchEntityType() thro...)</span>
-                <span class="method-start">481996 ms</span>
+                <span class="method-start">521237 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyOperationsOfBranchEntityType</span>
-                <span class="method-start">493492 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">aftermethod([TestResult name=verifyOperationsOfBranchEntityType status=SKIP method=DashboardTest.verifyOperation...)</span>
-                <span class="method-start">494600 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public final void com.testscripts.gurukulApp.DashboardTest.verifyOperationsOfBranchEntityType() thro...)</span>
-                <span class="method-start">499868 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyOperationsOfBranchEntityType</span>
-                <span class="method-start">512812 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">aftermethod([TestResult name=verifyOperationsOfBranchEntityType status=SKIP method=DashboardTest.verifyOperation...)</span>
-                <span class="method-start">514415 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public final void com.testscripts.gurukulApp.DashboardTest.verifyOperationsOfBranchEntityType() thro...)</span>
-                <span class="method-start">521063 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyOperationsOfBranchEntityType</span>
-                <span class="method-start">533210 ms</span>
+                <span class="method-start">532452 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">aftermethod([TestResult name=verifyOperationsOfBranchEntityType status=SUCCESS method=DashboardTest.verifyOperat...)</span>
-                <span class="method-start">563322 ms</span>
+                <span class="method-start">563141 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public final void com.testscripts.gurukulApp.DashboardTest.verifyOperationsOfStaffEntityType() throw...)</span>
-                <span class="method-start">566127 ms</span>
+                <span class="method-start">565823 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyOperationsOfStaffEntityType</span>
-                <span class="method-start">577651 ms</span>
+                <span class="method-start">577669 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">aftermethod([TestResult name=verifyOperationsOfStaffEntityType status=SKIP method=DashboardTest.verifyOperations...)</span>
+                <span class="method-start">579315 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public final void com.testscripts.gurukulApp.DashboardTest.verifyOperationsOfStaffEntityType() throw...)</span>
+                <span class="method-start">583920 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyOperationsOfStaffEntityType</span>
+                <span class="method-start">598796 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">aftermethod([TestResult name=verifyOperationsOfStaffEntityType status=SUCCESS method=DashboardTest.verifyOperati...)</span>
-                <span class="method-start">630904 ms</span>
+                <span class="method-start">649219 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.testscripts.gurukulApp.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
-                <span class="method-name">afterSuite(org.testng.TestRunner@60bdf15d)</span>
-                <span class="method-start">633034 ms</span>
+                <span class="method-name">afterSuite(org.testng.TestRunner@63cd604c)</span>
+                <span class="method-start">651440 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
