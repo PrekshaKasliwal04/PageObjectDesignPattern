@@ -71,10 +71,7 @@ public class SetTestEnvironments extends CommonMethod {
 	public void beforeMethod(Method MethodName, ITestResult result) throws Exception {
 		LoginPage loginPage = new LoginPage(PreDefinedActions.getDriver());
 		loginPage = loginPage.getInstance();
-		// DRIVER = DriverFactory.setDriver(System.getProperty("browserName"), SetTestEnvironments.getEnvironment(System.getProperty("environment")));
-		// DRIVER = DriverFactory.setDriver("FIREFOX","http://127.0.0.1:8080/#/");
-
-		DRIVER = DriverFactory.setDriver(System.getProperty("browserName"), "http://127.0.0.1:8080/#/");
+		 DRIVER = DriverFactory.setDriver(System.getProperty("browserName"), SetTestEnvironments.getEnvironment(System.getProperty("environment")));
 		setWebDriver(DRIVER);
 		jsDriver();
 		sleeper(5000);
@@ -114,10 +111,8 @@ public class SetTestEnvironments extends CommonMethod {
 				props.load(
 						SetTestEnvironments.class.getClassLoader().getResourceAsStream("properties/log4j.properties"));
 			} catch (FileNotFoundException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 

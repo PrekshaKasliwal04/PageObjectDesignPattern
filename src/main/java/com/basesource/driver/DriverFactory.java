@@ -52,7 +52,7 @@ public class DriverFactory {
 	private static WebDriver initFirefoxDriver(String appURL) {
 		LOGGER.info("Launching Firefox browser..");
 
-		System.setProperty("webdriver.gecko.driver", "D:\\gecko\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "lib" + File.separator + "geckodriver.exe");
 		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
 		capabilities.setCapability("marionette", true);
 	    WebDriver	driver = new FirefoxDriver();

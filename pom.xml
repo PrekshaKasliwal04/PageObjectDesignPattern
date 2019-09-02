@@ -226,6 +226,7 @@
 					<testFailureIgnore>true</testFailureIgnore>
 					<systemPropertyVariables>
 						<browserName>${BrowserName}</browserName>
+						<environment>${Environment}</environment>
 						<email></email>
 					</systemPropertyVariables>
 					<suiteXmlFiles>

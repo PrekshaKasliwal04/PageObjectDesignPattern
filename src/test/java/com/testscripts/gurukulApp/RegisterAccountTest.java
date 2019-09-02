@@ -32,6 +32,6 @@ public class RegisterAccountTest extends CommonTest {
 		registerAccountPage.enterTextForRegisterAccountPage("confirmPassword", password);
 	    registerAccountPage.verifyElementIsClickable("registerBtn");
         registerAccountPage.clickOnElementsOfRegisterAccountPage("registerBtn");
-        Assert.assertTrue(registerAccountPage.matchTextOfRegisterAccountPage("errorMsg", "Registration failed!"), "Registration failed message is not displayed");     			        
+        Assert.assertFalse(registerAccountPage.matchTextOfRegisterAccountPage("errorMsg", "Registration failed!"), "Registration failed message is not displayed");     			        
 	}
 }
