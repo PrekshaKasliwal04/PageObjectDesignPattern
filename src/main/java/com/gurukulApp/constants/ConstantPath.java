@@ -7,7 +7,6 @@ public class ConstantPath {
 	public static final String PROPERTIES_FOLDER_PATH = System.getProperty("user.dir") + File.separator + "properties" + File.separator;
 	public static final String CHROME_EXE_PATH = System.getProperty("user.dir") + File.separator + "lib" + File.separator + "chromedriver.exe";
 	public static final String FIREFOX_EXE_PATH = System.getProperty("user.dir") + File.separator + "lib" + File.separator + "geckodriver.exe";
-	public static final String EDGE_PATH = System.getProperty("user.dir") + File.separator + "lib" + File.separator + "MicrosoftWebDriver.exe";
 	public static final String DOWNLOAD_FOLDER_PATH = System.getProperty("user.dir") + File.separator + "download";
 	public static final String REPORT_PATH = System.getProperty("user.dir") + File.separator + "test-output" + File.separator;
 	public static final String FIREFOX_LOG_PATH = System.getProperty("user.dir") + File.separator + "log/FF.log";

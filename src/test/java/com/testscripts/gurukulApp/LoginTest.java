@@ -12,7 +12,7 @@ import com.gurukulApp.pages.LoginPage;
 public class LoginTest extends CommonTest {
 	private static Logger LOGGER = Logger.getLogger(LoginTest.class);
 	
-	@Test(priority = 1, groups = { "REGRESSION"},description = "Verify User login with valid credentials")
+	@Test(priority = 1, groups = { "REGRESSION"},description = "Verify User login with valid credentials and logout")
 	public final void verifyUserLoginWithValidCreds() throws Exception {
 		waitForPageLoaded();
 		login("admin", "admin");		
@@ -23,14 +23,12 @@ public class LoginTest extends CommonTest {
         logout();
 		LOGGER.info("Logout Success");		
 	}
-	@Test(priority = 2, groups = { "REGRESSION"},description = "Verify User login with valid credentials")
+	@Test(priority = 2, groups = { "REGRESSION"},description = "Verify User login with Invalid credentials")
 	public final void verifyUserLoginWithInValidCreds() throws Exception {
 		LoginPage loginPage = new LoginPage(PreDefinedActions.getDriver()).getInstance();
 		waitForPageLoaded();
 		login("random", "random");	
 		Assert.assertTrue(loginPage.getTextOfLoginPage("authError").equals("Authentication failed!"), "Entered user details are not In-valid");	
-		LOGGER.info("Invalid User login error Success");		
-		
-		
+		LOGGER.info("Invalid User login error Success");				
 	}
 }

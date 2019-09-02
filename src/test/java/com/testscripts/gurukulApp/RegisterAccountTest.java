@@ -12,7 +12,7 @@ import com.gurukulApp.pages.RegisterAccountPage;
 public class RegisterAccountTest extends CommonTest {
 	private static Logger LOGGER = Logger.getLogger(RegisterAccountTest.class);
 	
-	@Test(priority = 1, groups = { "REGRESSION"})
+	@Test(priority = 1, groups = { "REGRESSION"},description = "Test to Register new user")
 	public final void verifyRegisterAccountEnrollFailure() throws Exception {
         LoginPage loginPage = new LoginPage(PreDefinedActions.getDriver()).getInstance();
 		DashboardPage dashboardPage = new DashboardPage(PreDefinedActions.getDriver()).getInstance();

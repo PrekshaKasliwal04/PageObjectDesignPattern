@@ -71,7 +71,7 @@ public class SetTestEnvironments extends CommonMethod {
 	public void beforeMethod(Method MethodName, ITestResult result) throws Exception {
 		LoginPage loginPage = new LoginPage(PreDefinedActions.getDriver());
 		loginPage = loginPage.getInstance();
-		 DRIVER = DriverFactory.setDriver(System.getProperty("browserName"), SetTestEnvironments.getEnvironment(System.getProperty("environment")));
+		DRIVER = DriverFactory.setDriver(System.getProperty("browserName"), SetTestEnvironments.getEnvironment(System.getProperty("environment")));
 		setWebDriver(DRIVER);
 		jsDriver();
 		sleeper(5000);

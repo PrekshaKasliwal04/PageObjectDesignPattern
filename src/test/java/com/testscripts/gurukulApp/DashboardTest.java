@@ -52,7 +52,7 @@ public class DashboardTest extends CommonTest {
 	}
 	
 	
-	@Test(priority = 3, groups = { "REGRESSION"}, dependsOnMethods = { "verifyBranchEntityType" })
+	@Test(priority = 3, groups = { "REGRESSION"}, dependsOnMethods = { "verifyBranchEntityType" },description = "Test to verify staff addition")
 	public final void verifyStaffEntityType() throws Exception {
 		login("admin", "admin");		
 		DashboardPage dashboardPage = new DashboardPage(PreDefinedActions.getDriver()).getInstance();
@@ -84,7 +84,7 @@ public class DashboardTest extends CommonTest {
       
 	}	
 	
-	@Test(priority = 4, groups = { "REGRESSION"}, dependsOnMethods = { "verifyBranchEntityType"} )
+	@Test(priority = 4, groups = { "REGRESSION"}, dependsOnMethods = { "verifyBranchEntityType"},description = "Test to Verify operations query,view,delete,edit for branch entity" )
 	public final void verifyOperationsOfBranchEntityType() throws Exception {
 		login("admin", "admin");		
 		DashboardPage dashboardPage = new DashboardPage(PreDefinedActions.getDriver()).getInstance();
@@ -111,7 +111,7 @@ public class DashboardTest extends CommonTest {
         Assert.assertTrue(branchPage.matchTextOfBranchPage("deleteText", "Are you sure you want to delete Branch"));
         branchPage.verifyElementIsEnableOfBranchPage("deleteBtn"); 
  }
-	@Test(priority = 5, groups = { "REGRESSION"}, dependsOnMethods = { "verifyStaffEntityType"} )
+	@Test(priority = 5, groups = { "REGRESSION"}, dependsOnMethods = { "verifyStaffEntityType"},description = "Test to Verify operations query,view,delete,edit for staff entity" )
 	public final void verifyOperationsOfStaffEntityType() throws Exception {
 		login("admin", "admin");		
 		DashboardPage dashboardPage = new DashboardPage(PreDefinedActions.getDriver()).getInstance();
@@ -135,8 +135,6 @@ public class DashboardTest extends CommonTest {
         sleeper(3000);
         staffPage.clickOnElementsOfStaffPage("delete"); 
         sleeper(3000);
-        sleeper(3000);
-
         Assert.assertTrue(staffPage.matchTextOfStaffPage("deleteText", "Are you sure you want to delete Staff"));
   	}
 }

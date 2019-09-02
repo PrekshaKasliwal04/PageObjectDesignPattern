@@ -12,7 +12,7 @@ import com.gurukulApp.pages.StaffPage;
 public class PaginationTest extends CommonTest {
 	private static Logger LOGGER = Logger.getLogger(PaginationTest.class);
 
-	@Test(priority = 1, groups = { "REGRESSION" })
+	@Test(priority = 1, groups = { "REGRESSION" },description = "Test to Verify Pagination - First,Last,Next,Previous functions")
 	public final void verifyPagination() throws Exception {
 		waitForPageLoaded();
 		login("admin", "admin");
